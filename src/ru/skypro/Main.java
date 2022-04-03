@@ -6,14 +6,14 @@ public class Main {
 
     public static void main(String[] args) {
 	    // Задача 1
-        byte a = 100;
-        short b = 500;
-        int c = 40000;
-        long d = 430L;
-        char e = 33;
-        float f = 5.3f;
-        double g = 45.7;
-        boolean h = true;
+        byte a1 = 100;
+        short b1 = 500;
+        int c1 = 40000;
+        long d1 = 430L;
+        char e1 = 33;
+        float f1 = 5.3f;
+        double g1 = 45.7;
+        boolean h1 = true;
 
         // Задача 2
         double weightFirstBoxer = 78.2;
@@ -58,6 +58,33 @@ public class Main {
         salary(salaryMasha, "Маши");
         salary(salaryDenis, "Дениса");
         salary(salaryKristina, "Кристины");
+
+        // Задачи повышенной сложности
+        // Задача 6
+        short a = 12;
+        short b = 27;
+        short c = 44;
+        short d = 15;
+        short e = 9;
+        int result = a * (b + (c-d*e));
+        result = 0 - result;
+        System.out.println(result);
+
+        // Задача 7
+        int a7 = 5; // переменные a заняты задачами выше
+        int b7 = 7;
+
+        a7 = b7 - a7;
+        b7 = b7 - a7;
+        a7 = a7 + b7;
+        System.out.println("Переменная a равна = " + a7);
+        System.out.println("Переменная b равна = " + b7);
+
+        // Задача 8
+        int a8 = 256;
+        int b8;
+        b8 = (a8/10)%10;
+        System.out.println("Переменная b равна = " + b8);
 
     }
 
